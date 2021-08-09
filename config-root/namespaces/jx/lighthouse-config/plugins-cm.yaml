@@ -6,6 +6,10 @@ data:
       repos:
       - Tyagi0502/jx-cluster
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - Tyagi0502/android-test
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -16,6 +20,11 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      Tyagi0502/android-test:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       Tyagi0502/jx-cluster:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -26,6 +35,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      Tyagi0502/android-test:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       Tyagi0502/jx-cluster:
       - config-updater
       - approve
@@ -55,6 +80,11 @@ data:
     - repos:
       - Tyagi0502/jx-cluster
       trusted_org: todo
+    - repos:
+      - Tyagi0502/android-test
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null

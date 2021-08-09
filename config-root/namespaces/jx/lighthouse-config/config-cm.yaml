@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        Tyagi0502/android-test: true
         Tyagi0502/jx-cluster: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +20,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        Tyagi0502/android-test: merge
         Tyagi0502/jx-cluster: merge
       queries:
       - labels:
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - Tyagi0502/jx-cluster
+        - Tyagi0502/android-test
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - Tyagi0502/jx-cluster
+        - Tyagi0502/android-test
       target_url: http://lighthouse-jx.test.stylework.city/merge/status
 kind: ConfigMap
 metadata:

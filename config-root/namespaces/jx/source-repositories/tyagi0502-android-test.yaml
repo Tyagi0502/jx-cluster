@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: Tyagi0502
+    provider: github
+    repository: android-test
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: tyagi0502-android-test
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/Tyagi0502/android-test.git
+  org: Tyagi0502
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: android-test
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/Tyagi0502/android-test
