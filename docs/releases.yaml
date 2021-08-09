@@ -263,3 +263,17 @@
     repositoryUrl: https://cdfoundation.github.io/tekton-helm-chart
     resourcePath: config-root/namespaces/tekton-pipelines/tekton-pipeline
     version: 0.25.0
+- namespace: jx-staging
+  path: helmfiles/jx-staging/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    appVersion: 0.0.1
+    description: A Helm chart for Kubernetes
+    firstDeployed: "2021-08-09T13:06:43Z"
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    lastDeployed: "2021-08-09T13:06:43Z"
+    name: node-test
+    repositoryName: dev
+    repositoryUrl: https://chartmuseum-jx.test.stylework.city
+    resourcePath: config-root/namespaces/jx-staging/node-test
+    version: 0.0.1

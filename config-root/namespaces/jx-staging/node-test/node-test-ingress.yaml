@@ -1,0 +1,26 @@
+# Source: node-test/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    meta.helm.sh/release-name: 'node-test'
+  name: node-test
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+    - http:
+        paths:
+          - pathType: ImplementationSpecific
+            backend:
+              service:
+                name: node-test
+                port:
+                  number: 80
+      host: node-test-jx-staging.test.stylework.city
+  tls:
+    - hosts:
+        - node-test-jx-staging.test.stylework.city
+      secretName: "tls-test-stylework-city-p"
