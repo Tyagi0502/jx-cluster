@@ -29,7 +29,7 @@ spec:
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
-      email: "abhishek@stylework.city"
+      email: abhishek@stylework.city
       enabled: true
       production: true
   pipelineUser:

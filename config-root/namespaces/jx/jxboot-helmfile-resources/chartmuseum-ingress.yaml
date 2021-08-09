@@ -20,4 +20,8 @@ spec:
                 port:
                   number: 8080
             path: "/"
-      host: chartmuseum-jx.65.0.249.218.nip.io
+      host: chartmuseum-jx.test.stylework.city
+  tls:
+    - hosts:
+        - chartmuseum-jx.test.stylework.city
+      secretName: "tls-test-stylework-city-p"

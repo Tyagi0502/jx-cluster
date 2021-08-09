@@ -20,4 +20,8 @@ spec:
                 port:
                   number: 80
             path: "/hook"
-      host: hook-jx.65.0.249.218.nip.io
+      host: hook-jx.test.stylework.city
+  tls:
+    - hosts:
+        - hook-jx.test.stylework.city
+      secretName: "tls-test-stylework-city-p"

@@ -1,5 +1,28 @@
 - namespace: cert-manager
   path: helmfiles/cert-manager/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    appVersion: v1.1.0
+    description: A Helm chart for cert-manager
+    firstDeployed: "2021-08-09T10:55:53Z"
+    home: https://github.com/jetstack/cert-manager
+    icon: https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    lastDeployed: "2021-08-09T10:55:53Z"
+    maintainers:
+    - email: james@jetstack.io
+      name: munnerz
+    name: cert-manager
+    repositoryName: jetstack
+    repositoryUrl: https://charts.jetstack.io
+    resourcePath: config-root/namespaces/cert-manager/cert-manager
+    sources:
+    - https://github.com/jetstack/cert-manager
+    version: 1.1.0
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
   releases:
@@ -98,6 +121,16 @@
     sources:
     - https://github.com/jenkins-x-plugins/jx-build-controller
     version: 0.3.3
+  - apiVersion: v1
+    appVersion: 0.0.24
+    description: Acme
+    firstDeployed: "2021-08-09T10:56:00Z"
+    icon: https://avatars2.githubusercontent.com/u/35583233?s=200&v=4
+    lastDeployed: "2021-08-09T10:56:00Z"
+    name: acme
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
+    version: 0.0.24
   - apiVersion: v2
     appVersion: 0.0.78
     description: Jenkins X next gen cloud CI / CD platform for Kubernetes

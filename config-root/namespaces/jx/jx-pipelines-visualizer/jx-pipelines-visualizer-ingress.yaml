@@ -19,7 +19,7 @@ metadata:
   namespace: jx
 spec:
   rules:
-    - host: dashboard-jx.65.0.249.218.nip.io
+    - host: dashboard-jx.test.stylework.city
       http:
         paths:
           - pathType: ImplementationSpecific
@@ -28,3 +28,7 @@ spec:
                 name: jx-pipelines-visualizer
                 port:
                   name: http
+  tls:
+    - secretName: tls-test-stylework-city-p
+      hosts:
+        - dashboard-jx.test.stylework.city
