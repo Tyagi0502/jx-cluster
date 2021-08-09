@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - Tyagi0502/jx-cluster
-      target_url: http://lighthouse-jx./merge/status
+      target_url: http://lighthouse-jx.65.0.249.218.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
