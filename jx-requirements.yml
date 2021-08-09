@@ -25,7 +25,7 @@ spec:
   - key: production
   ingress:
     domain: test.stylework.city
-    externalDNS: false
+    externalDNS: true
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
