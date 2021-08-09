@@ -9,6 +9,7 @@ data:
       enabled:
         Tyagi0502/android-test: true
         Tyagi0502/jx-cluster: true
+        Tyagi0502/node-test: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -22,6 +23,7 @@ data:
       merge_method:
         Tyagi0502/android-test: merge
         Tyagi0502/jx-cluster: merge
+        Tyagi0502/node-test: merge
       queries:
       - labels:
         - approved
@@ -34,6 +36,7 @@ data:
         repos:
         - Tyagi0502/jx-cluster
         - Tyagi0502/android-test
+        - Tyagi0502/node-test
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - Tyagi0502/jx-cluster
         - Tyagi0502/android-test
+        - Tyagi0502/node-test
       target_url: http://lighthouse-jx.test.stylework.city/merge/status
 kind: ConfigMap
 metadata:
