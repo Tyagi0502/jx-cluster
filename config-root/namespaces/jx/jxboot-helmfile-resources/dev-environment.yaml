@@ -33,7 +33,7 @@ spec:
     pipelineUserEmail: "jenkins-x@googlegroups.com"
     prowConfig: Scheduler
     storageLocations:
-      - bucketUrl: s3://logs-jx-test-2021080910271651930000000a
+      - bucketUrl: s3://logs-jx-test-20210809121553942100000009
         classifier: logs
-      - bucketUrl: s3://reports-jx-test-20210809102713330700000006
+      - bucketUrl: s3://reports-jx-test-20210809121551114900000008
         classifier: reports

@@ -40,7 +40,7 @@ jxRequirements:
   - key: production
   ingress:
     domain: test.stylework.city
-    externalDNS: false
+    externalDNS: true
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
@@ -53,23 +53,23 @@ jxRequirements:
   secretStorage: vault
   storage:
   - name: logs
-    url: s3://logs-jx-test-2021080910271651930000000a
+    url: s3://logs-jx-test-20210809121553942100000009
   - name: reports
-    url: s3://reports-jx-test-20210809102713330700000006
+    url: s3://reports-jx-test-20210809121551114900000008
   - name: repository
-    url: s3://repository-jx-test-20210809102713335200000007
+    url: s3://repository-jx-test-20210809121551083900000002
   terraform: true
   vault:
     aws:
       dynamoDBRegion: ap-south-1
-      dynamoDBTable: vault-unseal-jx-test-T319QusZ
-      kmsKeyId: 04a542ec-9316-492b-9114-6d9b19629f0f
+      dynamoDBTable: vault-unseal-jx-test-cunSpIrQ
+      kmsKeyId: 76d9286f-43fb-44a9-b408-cae7e59ead73
       kmsRegion: ap-south-1
-      s3Bucket: vault-unseal-jx-test-20210809102713310100000001
+      s3Bucket: vault-unseal-jx-test-20210809121551102500000005
       s3Region: ap-south-1
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:
-  enabled: false
+  enabled: true
 jxRequirementsIngressTLS:
   enabled: true
 jxRequirementsKuberhealthy:
