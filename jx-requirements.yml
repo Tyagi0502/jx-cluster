@@ -8,7 +8,7 @@ spec:
     chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     clusterName: jx-test
     devEnvApprovers:
-    - todo
+    - Tyagi0502
     environmentGitOwner: todo
     gitKind: github
     gitName: github
@@ -24,14 +24,14 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: 65.0.249.218.nip.io
+    domain: test.stylework.city
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
-      email: ""
-      enabled: false
-      production: false
+      email: "abhishek@stylework.city"
+      enabled: true
+      production: true
   pipelineUser:
     username: Tyagi0502
   repository: nexus
