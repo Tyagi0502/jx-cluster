@@ -10,6 +10,12 @@ spec:
     repositories:
     - name: angular-test
     scheduler: in-repo
+  - owner: Tyagi0502
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: angular-test
+    scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess
